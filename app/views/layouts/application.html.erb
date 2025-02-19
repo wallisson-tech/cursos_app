@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cursos App</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+  </head>
+
+  <body>
+    <header>
+      <h1>CursosApp</h1>
+      <nav>
+          <%= link_to "Home", root_path %>
+          <%= link_to "Cursos", cursos_path %>
+          <%= link_to "Novo Curso", new_curso_path %>
+      </nav>
+    </header>
+
+    <main>
+      <%= yield %>
+    </main>
+
+    <footer>
+      <p>&copy; <%= Time.now.year %> Cursos App</p>
+    </footer>
+  </body>
+</html>
