@@ -12,6 +12,9 @@
 
   <body>
     <header>
+      <%= link_to root_path , class: 'logo' do %>
+        <%= image_tag "cursosnet.jpeg", alt: "Logo", class: "logo" %>
+      <% end %>
       <h1>CursosApp</h1>
       <nav>
           <%= link_to "Home", root_path %>
