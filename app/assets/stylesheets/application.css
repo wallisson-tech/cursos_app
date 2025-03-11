@@ -41,3 +41,8 @@ header {
     bottom: 0;
     width: 100%;
   }
+
+  .image{
+    width: 100px;
+    height: auto;
+  }

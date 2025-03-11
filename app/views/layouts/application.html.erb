@@ -3,6 +3,7 @@
   <head>
     <title>Cursos App</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -11,24 +12,25 @@
   </head>
 
   <body>
-    <header>
-      <%= link_to root_path , class: 'logo' do %>
+      <header>
+        <%= link_to root_path , class: 'logo' do %>
         <%= image_tag "cursosnet.jpeg", alt: "Logo", class: "logo" %>
-      <% end %>
-      <h1>CursosApp</h1>
-      <nav>
-          <%= link_to "Home", root_path %>
-          <%= link_to "Cursos", cursos_path %>
-          <%= link_to "Novo Curso", new_curso_path %>
-      </nav>
-    </header>
+        <% end %>
+        <h1>CursosApp</h1>
+        <nav>
+            <%= link_to "Home", root_path %>
+            <%= link_to "Cursos", cursos_path %>
+            <%= link_to "Novo Curso", new_curso_path %>
+        </nav>
+      </header>
 
-    <main>
-      <%= yield %>
-    </main>
+      <main>
+        <%= image_tag "cursosnet.jpeg", alt: "Image", class: "image" %>
+        <%= yield %>
+      </main>
 
-    <footer>
-      <p>&copy; <%= Time.now.year %> Cursos App</p>
-    </footer>
+      <footer>
+        <p>&copy; <%= Time.now.year %> Cursos App</p>
+      </footer>
   </body>
 </html>
