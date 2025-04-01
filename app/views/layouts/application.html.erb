@@ -12,9 +12,9 @@
   </head>
 
   <body>
-      <header>
-        <%= link_to root_path , class: 'logo' do %>
-        <%= image_tag "cursosnet.jpeg", alt: "Logo", class: "logo" %>
+      <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+        <%= link_to root_path, class: 'logo' do %>
+        <%= image_tag "cursosnet.jpeg", class: "logo"  %>
         <% end %>
         <h1>CursosApp</h1>
         <nav>
@@ -24,7 +24,8 @@
         </nav>
       </header>
 
-      <main>
+      <main class="container" >
+        <h1>New branch criada </h1>
         <%= image_tag "cursosnet.jpeg", alt: "Image", class: "image" %>
         <%= yield %>
       </main>

@@ -1,6 +1,7 @@
 <h1>Cursos</h1>
-<%= link_to 'Novo Curso', new_curso_path %>
-<ul>
+<%= link_to 'Novo Curso', new_curso_path, class: 'btn btn-primary' %>
+
+<ul class="list-group">
   <% @cursos.each do |curso| %>
     <li>
       <%= link_to curso.nome, curso_path(curso) %>
